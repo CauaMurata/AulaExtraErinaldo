@@ -4,7 +4,7 @@ Pilha pilha;
 
 void pilha_entrar(void){
   if (pilha.fim == tamanho){
-    printf("\nA pilha está cheia, impossível de empilhar!\n");
+    printf("\nA pilha está cheia!!!\n");
   }else{
     printf("\nDigite o valor a ser empilhado: ");
     scanf("%d", &pilha.dados[pilha.fim]);
@@ -14,7 +14,7 @@ void pilha_entrar(void){
 
 void pilha_sair(void){
   if (pilha.inicio == pilha.fim){
-    printf("\nA pilha está vazia, impossível empilhar\n\n");
+    printf("\nA pilha está vazia!!!\n\n");
   }else{
     pilha.dados[pilha.fim - 1] = 0;
     pilha.fim--;
